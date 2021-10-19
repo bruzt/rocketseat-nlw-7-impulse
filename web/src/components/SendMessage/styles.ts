@@ -140,4 +140,33 @@ export const Container = styled.div`
       filter: brightness(0.8);
     }
   }
+
+  @media (max-width: 1300px) {
+    .card {
+      margin-left: -5rem;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .card {
+      margin-left: -3rem;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .card {
+      margin-left: -1rem;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .card {
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: 900px) {
+    justify-content: center;
+    align-items: flex-start;
+  }
 `;
