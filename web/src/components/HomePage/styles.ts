@@ -13,31 +13,6 @@ export const Container = styled.div`
     display: flex;
   }
 
-  main .messages-container {
-    width: 100%;
-    max-width: 1fr;
-    min-height: 100vh;
-  }
-
-  .messages-container figure {
-    position: relative;
-
-    width: 17.5rem;
-    height: 1.5rem;
-
-    margin-top: 2rem;
-  }
-
-  .messages-container .messages {
-    margin-top: 10rem;
-  }
-
-  .messages-container .messages div:nth-child(2) {
-    padding-left: 5rem;
-
-    margin: 2.5rem 0;
-  }
-
   main .login-container {
     width: 100%;
     max-width: 28.3125rem;

@@ -1,22 +1,24 @@
-import { HtmlHTMLAttributes } from "react";
+import { HTMLAttributes } from "react";
 import Img from "next/image";
 
 import { Container } from "./styles";
 
-interface IProps extends HtmlHTMLAttributes<HTMLDivElement> {
+interface IProps extends HTMLAttributes<HTMLDivElement> {
   text: string;
   avatarUrl: string;
   username: string;
+  isFirst: boolean;
 }
 
 export default function Message({
   text,
   avatarUrl,
   username,
+  isFirst,
   ...rest
 }: IProps) {
   return (
-    <Container {...rest}>
+    <Container className={isFirst ? "first" : ""} {...rest}>
       <p>{text}</p>
 
       <div className="user">

@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  &.first {
+    animation: fade-in 1s ease forwards;
+  }
+
   p {
     max-width: 27.5rem;
 
@@ -40,5 +44,14 @@ export const Container = styled.div`
 
     padding: 0.35rem !important;
     background: #121214;
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 `;
