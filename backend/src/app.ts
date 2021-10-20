@@ -13,9 +13,9 @@ const io = new Server(httpServer, {
   cors: { origin: process.env.CORS_ORIGIN },
 });
 
-io.on("connection", (socket) => {
+/*io.on("connection", (socket) => {
   console.log(`Usuário conectado no socket ${socket.id}`);
-});
+});*/
 
 app.use(express.json());
 
