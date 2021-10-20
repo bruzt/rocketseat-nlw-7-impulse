@@ -49,7 +49,11 @@ export default function HomePage() {
 
         messagesQueue.shift();
       }
-    }, 3000);
+    }, 2000);
+
+    return () => {
+      socket.disconnect();
+    };
   }, []);
 
   async function fetchMessages() {
