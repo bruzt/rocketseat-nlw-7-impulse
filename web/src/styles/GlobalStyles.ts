@@ -23,6 +23,7 @@ export default createGlobalStyle`
         padding: 0;
         outline: 0;
         box-sizing: border-box;
+        font-family: Roboto, sans-serif;
     }
 
     html, body {
@@ -32,8 +33,6 @@ export default createGlobalStyle`
     body {
         background: #121214;
         color: #E1E1E6;
-        font-family: Roboto, Arial, Helvetica, sans-serif;
-        font-size: 16px;
     }
 
     a {
@@ -43,12 +42,10 @@ export default createGlobalStyle`
 
     input, select, textarea {
         background: #29292E;
-        font-family: inherit;
         color: inherit;
     }
 
     button {
         cursor: pointer;
-        font: inherit;
     }
 `;

@@ -6,7 +6,7 @@ export const Container = styled.div`
   min-height: 100vh;
 
   background-image: url("send-message-background.png");
-  background-position: center;
+  background-position: right;
   background-size: auto 100%;
   background-repeat: no-repeat;
 
@@ -19,8 +19,6 @@ export const Container = styled.div`
     height: 36.125rem;
 
     background: #1b1b1f;
-
-    margin-left: -7rem;
   }
 
   .card header {
@@ -91,15 +89,20 @@ export const Container = styled.div`
     margin-top: 2rem;
   }
 
-  .message-input-container h3 {
-    padding: 1.5rem;
+  .message-input-container label {
+    display: block;
 
+    padding: 1.5rem;
+    font-weight: bold;
     background: #29292e;
   }
 
   .message-input-container textarea {
     width: 100%;
     height: 10rem;
+
+    font-size: 1rem;
+    line-height: 1.5rem;
 
     border-style: none;
     border-color: Transparent;
@@ -141,32 +144,15 @@ export const Container = styled.div`
     }
   }
 
-  @media (max-width: 1300px) {
-    .card {
-      margin-left: -5rem;
-    }
-  }
-
-  @media (max-width: 1200px) {
-    .card {
-      margin-left: -3rem;
-    }
-  }
-
-  @media (max-width: 1100px) {
-    .card {
-      margin-left: -1rem;
-    }
-  }
-
-  @media (max-width: 1000px) {
-    .card {
-      margin-left: 0;
-    }
-  }
-
   @media (max-width: 900px) {
+    max-width: 100%;
+    min-height: fit-content;
+
+    margin-bottom: 1rem;
+
     justify-content: center;
     align-items: flex-start;
+
+    background-position: center;
   }
 `;

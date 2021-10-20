@@ -21,7 +21,12 @@ export default function Message({
 
       <div className="user">
         <figure>
-          <Img src={avatarUrl} alt="avatar" width={30} height={30} />
+          <Img
+            src={avatarUrl}
+            alt={username + " avatar"}
+            width={30}
+            height={30}
+          />
         </figure>
         <span>&nbsp;&nbsp;{username}</span>
       </div>

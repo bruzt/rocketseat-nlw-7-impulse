@@ -57,6 +57,7 @@ export const Container = styled.div`
 
   .login-container h1 {
     text-align: center;
+    font-size: 2rem;
   }
 
   .login-container button {
@@ -69,6 +70,7 @@ export const Container = styled.div`
     background-color: #ffcd1f;
 
     font-weight: bold;
+    font-size: 1rem;
 
     display: flex;
     justify-content: center;
