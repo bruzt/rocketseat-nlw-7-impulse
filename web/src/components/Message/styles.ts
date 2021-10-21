@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  &.first {
-    animation: fade-in 1s ease forwards;
-  }
+  animation: fade-in 1s ease forwards;
 
   p {
     max-width: 27.5rem;

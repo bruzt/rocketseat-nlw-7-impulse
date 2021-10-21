@@ -7,18 +7,16 @@ interface IProps extends HTMLAttributes<HTMLDivElement> {
   text: string;
   avatarUrl: string;
   username: string;
-  isFirst: boolean;
 }
 
 export default function Message({
   text,
   avatarUrl,
   username,
-  isFirst,
   ...rest
 }: IProps) {
   return (
-    <Container className={isFirst ? "first" : ""} {...rest}>
+    <Container {...rest}>
       <p>{text}</p>
 
       <div className="user">

@@ -49,7 +49,7 @@ export function UserContextProvider({ children }: IProps) {
   function redirectToGithubOauth() {
     if (process.browser) {
       window.location.replace(
-        `https://github.com/login/oauth/authorize?scope=user&client_id=01a9134425ca1ec8e789`
+        `https://github.com/login/oauth/authorize?scope=user&client_id=01a9134425ca1ec8e789&redirect_uri=http://localhost:3000`
       );
     }
   }

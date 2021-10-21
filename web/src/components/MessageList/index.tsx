@@ -72,10 +72,9 @@ export default function MessageList() {
       </figure>
 
       <div className="messages">
-        {messages.map((message, index) => (
+        {messages.map((message) => (
           <Message
             key={message.id}
-            isFirst={index == 0}
             text={message.text}
             avatarUrl={message.user.avatar_url}
             username={message.user.name}
